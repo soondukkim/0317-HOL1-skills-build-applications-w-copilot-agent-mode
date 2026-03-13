@@ -14,9 +14,8 @@
 - `octofit_db` 데이터베이스에 테스트 데이터 적재
 - `octofit_db` 데이터베이스에 테스트 데이터가 정상적으로 적재되었는지 검증
 
-아래 프롬프트를 **GitHub Copilot Chat**에 복사하여 붙여넣고, 프롬프트 입력 드롭다운에서 **“Ask”** 또는 **“Edit”** 대신 **“Agent”**를 선택하세요.
-
 > [!NOTE]
+> 아래 프롬프트를 **GitHub Copilot Chat**에 복사하여 붙여넣고, 프롬프트 입력 드롭다운에서 Ask 또는 Edit 대신 **Agent**를 선택하세요.
 > - Copilot agent mode는 대화형이므로 질문을 받을 수도 있고, 질문을 할 수도 있습니다.
 > - Copilot의 응답을 잠시 기다린 뒤, 제시된 명령을 실행하려면 **`Continue`** 버튼을 누르세요.
 > - Copilot agent mode가 생성하거나 수정한 파일은 작업이 완료될 때까지 유지하세요.
