@@ -51,8 +51,8 @@
 > 
 > <img width="2000" height="1123" alt="image" src="https://github.com/user-attachments/assets/6a919665-36f9-4f8a-add5-3805c81451c3" />
 
-> <br>
-> <br>
+<br>
+<br>
 1. 이제 애플리케이션 디렉터리 구조를 생성하고, Python 가상 환경을 설정했으며, Copilot agent mode가 모든 프로젝트 의존성을 설치하기 위한 `requirements.txt` 작성을 도와주었습니다. 이제 변경 사항을 `build-octofit-app` 브랜치에 반영해 봅시다.
 1. 새 변경 사항이 완료되었으므로, **소스 제어**에서 **커밋 및 푸시** 하여 `build-octofit-app` 브랜치에 반영하세요.  (소스 제어의 변경 내용 창에서 **커밋 메시지 생성** 을 클릭하면 변경된 내용에 대한 커밋 메시지가 자동 생성 됩니다.)             
    <img width="469" height="329" alt="image" src="https://github.com/user-attachments/assets/940be8c5-5620-40e7-858b-1946ae1c2729" />
