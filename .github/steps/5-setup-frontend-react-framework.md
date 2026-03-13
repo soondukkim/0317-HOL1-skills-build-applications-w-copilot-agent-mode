@@ -1,54 +1,66 @@
-## Step 5: Setup the frontend React framework, update the components, and start OctoFit Tracker app
+
+## 5단계: 프론트엔드 React 프레임워크 설정, 컴포넌트 업데이트, OctoFit Tracker 앱 실행
 
 > [!NOTE]
-> **Behind the scenes:** This exercise uses custom instruction files that help guide GitHub Copilot's responses. The instruction file `.github/instructions/octofit_tracker_react_frontend.instructions.md` contains React framework setup commands, Bootstrap integration, and frontend structure guidelines that Copilot references when generating code for this step.
+> **백그라운드 설명:** 이 실습에서는 GitHub Copilot의 응답을 안내하는 **커스텀 지침 파일**을 사용합니다.  
+> `.github/instructions/octofit_tracker_react_frontend.instructions.md` 지침 파일에는 React 프레임워크 설정 명령, Bootstrap 통합, 프론트엔드 구조 가이드라인이 포함되어 있으며, Copilot은 이 단계를 위한 코드를 생성할 때 해당 내용을 참조합니다.
 
-In this step, we will accomplish the following:
+이 단계에서는 다음 작업을 수행합니다.
 
-- Setup the octofit-tracker frontend React framework.
-- Update the following components to include the React framework:
-  - src/App.js
-  - src/index.js
-  - src/components/Activities.js
-  - src/components/Leaderboard.js
-  - src/components/Teams.js
-  - src/components/Users.js
-  - src/components/Workouts.js
-- Start the React app and check the output.
+- `octofit-tracker` 프론트엔드 React 프레임워크 설정
+- 다음 컴포넌트를 React 프레임워크를 사용하도록 업데이트
+  - `src/App.js`
+  - `src/index.js`
+  - `src/components/Activities.js`
+  - `src/components/Leaderboard.js`
+  - `src/components/Teams.js`
+  - `src/components/Users.js`
+  - `src/components/Workouts.js`
+- React 앱을 실행하고 출력 확인
 
-Copy and paste the following prompt(s) in the GitHub Copilot Chat and select the "Agent" instead of "Ask" or "Edit" from the drop down where you are inserting the prompt.
+아래 프롬프트를 **GitHub Copilot Chat**에 복사하여 붙여넣고, 프롬프트 입력 드롭다운에서 **“Ask”** 또는 **“Edit”** 대신 **“Agent”**를 선택하세요.
 
 > [!NOTE]
-> - Keep in mind that the Copilot agent mode is conversational so it may ask you questions and you can ask it questions too.
-> - Wait a moment for the Copilot to respond and press the continue button to execute commands presented by Copilot agent mode.
-> - Keep files created and updated by Copilot agent mode until it is finished.
-> - Agent mode has the ability to evaluate your code base and execute commands and add/refactor/delete parts of your code base and automatically self heal if it or you makes a mistake in the process.
+> - Copilot agent mode는 대화형이므로 질문을 받을 수도 있고, 질문을 할 수도 있습니다.
+> - Copilot의 응답을 잠시 기다린 뒤, Copilot agent mode가 제시한 명령을 실행하려면 **continue** 버튼을 누르세요.
+> - Copilot agent mode가 생성하거나 수정한 파일은 작업이 완료될 때까지 유지하세요.
+> - Agent mode는 코드베이스를 평가하고 명령을 실행하며, 코드베이스의 일부를 추가/리팩터링/삭제할 수 있고, 과정 중 실수가 발생하면 자동으로 복구(self-heal)할 수 있습니다.
 
-**Open up a new Copilot Chat session by hitting the plus `+` icon in the Copilot Chat pane.**
+**Copilot Chat 패널에서 플러스 `+` 아이콘을 눌러 새 Copilot Chat 세션을 여세요.**
 
-### :keyboard: Activity: Install the octofit-tracker frontend React framework
+### :keyboard: 활동: octofit-tracker 프론트엔드 React 프레임워크 설치
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
-> ```prompt
-> Let's setup the octofit-tracker frontend React  framework and
-> ensure everything is created in the `octofit-tracker/frontend` directory by using `--prefix`
+> 아래 프롬프트를 **한번에** 실행해 주세요.
+> 프로세스 진행을 묻는 경우 **허용** 버튼 또는 'y' 를 입력해 주세요. 
 >
-> 1. Make sure the the octofit-tracker/frontend directory exists.
-> 2. create the react app
-> 3. Install react, bootstrap, and react-router-dom
-> 4. Import bootstrap css in the src/index.js file.
-> 5. Don't change .gitignore file
->```
+> ```prompt
+> octofit-tracker frontend React 프레임워크를 설정하고, `--prefix`를 사용해 모든 파일이 `octofit-tracker/frontend` 디렉터리에 생성되도록 합니다.
+>
+> 1. `octofit-tracker/frontend` 디렉터리가 존재하는지 확인합니다.
+> 2. React 앱을 생성합니다.
+> 3. react, bootstrap, react-router-dom을 설치합니다.
+> 4. `src/index.js` 파일에 bootstrap CSS를 import 합니다.
+> 5. `.gitignore` 파일은 변경하지 마세요.
+> ```
+> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/771bae24-4bc3-42ba-a4de-7ee0ed22b282" />
+> <br>
+> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/ae7bf49d-0bd4-4337-b259-d08efe8ffead" />
+> <br>
 
-### :keyboard: Activity: Update the octofit-tracker frontend React components
+
+
+### :keyboard: 활동: octofit-tracker 프론트엔드 React 컴포넌트 업데이트
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
-> ```prompt
-> Let's update the octofit-tracker frontend React components.
+> 변경 내용 점검을 위해서 아래 프롬프트를 **단계별로** 실행해 주세요.
 >
-> - Update the following components to include the React framework to point to the backend REST API:
+> ```prompt
+> Octofit-tracker frontend React 컴포넌트를 업데이트합시다.
+>
+> - 다음 컴포넌트들을 React 프레임워크를 사용하여 backend REST API를 가리키도록 업데이트합니다.
 >   - src/App.js
 >   - src/index.js
 >   - src/components/Activities.js
@@ -56,97 +68,125 @@ Copy and paste the following prompt(s) in the GitHub Copilot Chat and select the
 >   - src/components/Teams.js
 >   - src/components/Users.js
 >   - src/components/Workouts.js
-> - In each component replace the fetch url with the codespace url
->   https://$REACT_APP_CODESPACE_NAME-8000.app.github.dev/api/[component]/
->   for the Django rest framework backend.
->   make sure all components are pulling data from the REST api endpoint
->   for display in the REACT frontend
-> - Make sure to use the correct port and protocol http or https.
-> - Update src/App.js to include the main navigation for all components.
-> - Make sure react-router-dom is used for the navigation menu.
-> - The react app should show the navigation menu and the components.
-> - Update all components to log the fetched data and make them compatible with both paginated (.results) and plain array responses.
-> - Add console.log statements to each component to log the fetched data and the REST API endpoints.
 > ```
+> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/fa5adc46-9408-4996-8958-d08c074c5618" />
+> <br>
+> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/27561af8-394d-4ed9-84eb-a4008ed82759" />
+> <br>
 
-### :keyboard: Activity: Start the react app and check the output
+> ```prompt
+> - 각 컴포넌트에서 `fetch` URL을 backend codespace url로 변경합니다.
+>    - 예: Django REST 프레임워크 백엔드의 경우 `https://$REACT_APP_CODESPACE_NAME-8000.app.github.dev/api/[component]/`
+> - 모든 컴포넌트가 REST API 엔드포인트에서 데이터를 가져와 REACT frontend 에 표시하도록 합니다.
+> - 올바른 포트와 프로토콜(http 또는 https)을 사용해야 합니다.
+> ```
+> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/ac345921-a8e7-4759-9196-3509a45aae00" />
+> <br>
 
-Now, let's actually try running the react application! In the left sidebar, select the `Run and Debug` tab and then press the **Start Debugging** icon.
+> ```prompt 
+> - `src/App.js`를 업데이트하여 모든 컴포넌트에 대한 메인 네비게이션을 포함합니다.
+> - 네비게이션 메뉴에는 react-router-dom을 사용합니다.
+> - React 앱에는 네비게이션 메뉴와 각 컴포넌트가 표시되어야 합니다.
+> ```
+> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/f4b8a9a9-04a1-4e2e-8e3d-f60c9c0663d1" />
+> <br>
+
+> ```prompt 
+> - 모든 컴포넌트에 가져온 데이터를 로그에 출력하도록 업데이트하고, 페이지네이션된 결과(.results)와 일반 배열 응답 모두에 호환되도록 수정하세요.
+> ```
+> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/cc4970c7-db71-4411-8e01-26ad5321c44e" />
+> <br>
+
+> ```prompt  
+> - 각 컴포넌트에 console.log 문을 추가하여 가져온 데이터와 REST API 엔드포인트를 로그로 출력합니다.
+> ```
+> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/3ed82b45-7528-41b7-840c-bbd9a076c327" />
+> <br>
+> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/9f0938c5-1bc7-43ea-813a-496bdd6cb9fd" />
+> <br>
+
+### :keyboard: 활동: React 앱 실행 및 출력 확인
+
+이제 실제로 React 애플리케이션을 실행해 봅시다!  
+왼쪽 사이드바에서 **`Run and Debug`** 탭을 선택한 다음, **Start Debugging** 아이콘을 클릭하세요.
 
 <img alt="Run React Frontend" src="https://github.com/user-attachments/assets/b76a8e82-8435-4cbd-9540-8143756d1c60"  width=30% height=30%>
 
-Go to the running React Frontend url that pops up for port 3000 that looks like the following:
+포트 3000에 대해 표시되는 실행 중인 React 프론트엔드 URL로 이동합니다. 예시는 다음과 같습니다.
 
 <img alt="react-frontend-port" src="https://github.com/user-attachments/assets/a0c8b213-ee5f-46dd-8675-686a7ba0818f" width=30% height=30%>
 
-Once you open it in your web browser you will get a warning like the following:
+웹 브라우저에서 열면 다음과 같은 경고 화면이 나타납니다.
 
 <img alt="django-rest-api" src="https://github.com/user-attachments/assets/cb52d137-e78d-440b-8e9c-c322d7c49b48" width=30% height=30%>
 
-Once you click `Continue` it should look similar the following:
+`Continue`를 클릭하면 다음과 같이 표시될 것입니다.
 
 <img alt="react-frontend-app" src="https://github.com/user-attachments/assets/f7f1a076-c259-49f6-8aa5-9ebcd5f0698d" width=50% height=50%>
 
-### :keyboard: Activity: Let's add some formatting, structuring, and styling to the octofit tracker app
+### :keyboard: 활동: octofit tracker 앱에 포맷, 구조, 스타일 추가하기
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
 > ```prompt
-> Let's style this like App.css and make it look nice.
+> App.css 스타일을 적용해 보기 좋게 만들어 봅시다.
 >
-> - Let's make the App.js and all components javascript files in the app are consistent with the following:
->   - Use bootstrap tables for the data in all javascript components.
->   - Use bootstrap buttons for the buttons.
->   - Use bootstrap headings for the headings.
->   - Use bootstrap links for the links.
->   - Use bootstrap navigation for the navigation menu.
->   - Use bootstrap forms for the forms.
->   - Use bootstrap cards for the cards.
->   - Use bootstrap modals for the modals.
->   - Consistent table layouts for all components data.
->```
+> - App.js와 모든 컴포넌트 JavaScript 파일을 다음 기준에 맞게 통일합니다.
+> - 모든 JavaScript 컴포넌트의 데이터 표시에는 bootstrap 테이블을 사용합니다.
+> - 버튼에는 bootstrap 버튼을 사용합니다.
+> - 제목에는 bootstrap heading을 사용합니다.
+> - 링크에는 bootstrap 링크를 사용합니다.
+> - 네비게이션 메뉴에는 bootstrap navigation을 사용합니다.
+> - 폼에는 bootstrap form을 사용합니다.
+> - 카드에는 bootstrap card를 사용합니다.
+> - 모달에는 bootstrap modal을 사용합니다.
+> - 모든 컴포넌트 데이터에 대해 일관된 테이블 레이아웃을 적용합니다.
+> ```
 
-### :keyboard: Optional Activity: Let's make the octofit tracker app look nice, pretty, and add some color
+### :keyboard: 선택 활동: octofit tracker 앱을 더 보기 좋게 만들고 색상 추가하기
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
 > ```prompt
-> Let's style this like App.css and make it look nice.
-> 
-> -  Edit the App.css file to do the following:
->   - Add some color to the background.
->   - Add some color to the text.
->   - Add some color to the tables.
->   - Add some color to the buttons.
->   - Add some color to the headings.
->   - Add some color to the links.
->   - Add some color to the navigation menu.
-> - Add the octofitapp-small logo justified to the left to the app and make it look nice.
-> - Add a favicon to the app and make it look nice.
->```
+> App.css를 수정하여 더 보기 좋게 스타일링해 봅시다.
+>
+> - App.css 파일을 수정하여 다음을 수행합니다.
+> - 배경에 색상을 추가합니다.
+> - 텍스트에 색상을 추가합니다.
+> - 테이블에 색상을 추가합니다.
+> - 버튼에 색상을 추가합니다.
+> - 제목에 색상을 추가합니다.
+> - 링크에 색상을 추가합니다.
+> - 네비게이션 메뉴에 색상을 추가합니다.
+> - 앱 왼쪽에 정렬된 octofitapp-small 로고를 추가하여 보기 좋게 만듭니다.
+> - 앱에 favicon을 추가하여 보기 좋게 만듭니다.
+> ```
 
-### :keyboard: Optional Activity: Iterate on the appearance and try different models
+### :keyboard: 선택 활동: 외형을 반복적으로 개선하고 다양한 모델 시도하기
 
 > [!TIP]
-> - Try creating your own prompts to change the application appearance, add features, and try different models.
+> - 애플리케이션 외형을 변경하거나 기능을 추가하고,
+>   다양한 모델을 시도하기 위해 자신만의 프롬프트를 만들어 보세요.
 
-1. Now that we have created the React frontend for all application components, let's check our changes in to our `build-octofit-app` branch.
-
-1. With our new changes complete, please **commit** and **push** the changes to the `build-octofit-app` branch.
-
-1. Wait a moment for Mona to check your work, provide feedback, and share the next lesson so we can keep working!
+1. 이제 모든 애플리케이션 컴포넌트에 대한 React 프론트엔드를 생성했으므로,  
+   변경 사항을 `build-octofit-app` 브랜치에 반영합니다.
+1. 새 변경 사항이 완료되었으므로 **커밋(commit)** 하고 **푸시(push)** 하여  
+   `build-octofit-app` 브랜치에 반영하세요.
+1. Mona가 작업을 확인하고 피드백을 제공하며 다음 레슨을 공유할 때까지 잠시 기다려 계속 진행하세요!
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
-
-If you don't get feedback, here are some things to check:
-
-- Make sure your commit changes were made for the following files to the branch `build-octofit-app` and pushed/synchronized to GitHub:
-  - `octofit-tracker/frontend/src/components/Activities.js` and it contains `-8000.app.github.dev/api/activities/`
-  - `octofit-tracker/frontend/src/components/Leaderboard.js` and it contains `-8000.app.github.dev/api/leaderboard/`
-  - `octofit-tracker/frontend/src/components/Teams.js` and it contains `-8000.app.github.dev/api/teams/`
-  - `octofit-tracker/frontend/src/components/Users.js` and it contains `-8000.app.github.dev/api/users/`
-  - `octofit-tracker/frontend/src/components/Workouts.js` and it contains `-8000.app.github.dev/api/workouts/`
-- If Mona found a mistake, simply make a correction and push your changes again. Mona will check your work as many times as needed.
-
+<summary>문제가 있나요? 🤷</summary><br/>
+피드백이 오지 않는다면 다음 사항을 확인해 보세요.
+- 다음 파일이 `build-octofit-app` 브랜치에 커밋되었고 GitHub로 푸시/동기화되었는지 확인하세요.
+  - `octofit-tracker/frontend/src/components/Activities.js`에  
+    `-8000.app.github.dev/api/activities/`가 포함되어 있는지
+  - `octofit-tracker/frontend/src/components/Leaderboard.js`에  
+    `-8000.app.github.dev/api/leaderboard/`가 포함되어 있는지
+  - `octofit-tracker/frontend/src/components/Teams.js`에  
+    `-8000.app.github.dev/api/teams/`가 포함되어 있는지
+  - `octofit-tracker/frontend/src/components/Users.js`에  
+    `-8000.app.github.dev/api/users/`가 포함되어 있는지
+  - `octofit-tracker/frontend/src/components/Workouts.js`에  
+    `-8000.app.github.dev/api/workouts/`가 포함되어 있는지
+- Mona가 오류를 발견했다면, 수정 후 다시 푸시하세요. Mona는 필요할 때마다 여러 번 작업을 확인합니다.
 </details>
