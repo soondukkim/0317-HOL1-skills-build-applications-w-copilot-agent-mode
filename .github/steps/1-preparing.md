@@ -32,7 +32,7 @@ Copilot agent mode는 목표를 달성하기 위해 보다 **자율적이고 동
    - 하단 패널(Ctrl+J)에서는 디버거 출력 확인, 터미널 명령 실행, 웹 서비스 포트 설정을 할 수 있습니다.
    - `docs` 폴더에는 **Copilot agent mode가 앱을 생성하는 데 참고할 또 다른 샘플 애플리케이션 저장소**가 들어 있습니다. 이에 대해서는 다음 단계에서 자세히 다룹니다!
 1. VS Code 상단에서 **Copilot 아이콘**을 찾아 클릭하여 Copilot Chat 패널을 엽니다.  
-   <img width="797" height="961" alt="image" src="https://github.com/user-attachments/assets/11124c0c-bb59-421d-8c46-ad04554b501a" />
+   <img width="518" height="624" alt="image" src="https://github.com/user-attachments/assets/4b02465e-b7f3-4b63-b962-7e9e9486bf36" />
 1. GitHub Copilot을 처음 사용하는 경우, 사용 약관에 동의해야 계속 진행할 수 있습니다.
    - **Accept** 버튼을 클릭해 계속하세요.
 
