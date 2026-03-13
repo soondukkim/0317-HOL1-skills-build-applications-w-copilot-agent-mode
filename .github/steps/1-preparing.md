@@ -32,7 +32,7 @@ Copilot agent mode는 목표를 달성하기 위해 보다 **자율적이고 동
    - 하단 패널(Ctrl+J)에서는 디버거 출력 확인, 터미널 명령 실행, 웹 서비스 포트 설정을 할 수 있습니다.
    - `docs` 폴더에는 **Copilot agent mode가 앱을 생성하는 데 참고할 또 다른 샘플 애플리케이션 저장소**가 들어 있습니다. 이에 대해서는 다음 단계에서 자세히 다룹니다!
 1. VS Code 상단에서 **Copilot 아이콘**을 찾아 클릭하여 Copilot Chat 패널을 엽니다.  
-   <img width="518" height="624" alt="image" src="https://github.com/user-attachments/assets/c54cc257-d128-477d-b0a3-0e577dbd09be" />
+   <img width="518" height="165" alt="image" src="https://github.com/user-attachments/assets/9313c29b-129c-4834-b797-f859aca41fa6" />
 1. GitHub Copilot을 처음 사용하는 경우, 사용 약관에 동의해야 계속 진행할 수 있습니다.
    - **Accept** 버튼을 클릭해 계속하세요.
 
@@ -45,8 +45,8 @@ Copilot agent mode는 목표를 달성하기 위해 보다 **자율적이고 동
 
 1. 아직 VS Code에 있지 않다면 VS Code로 돌아옵니다.
 1. GitHub Copilot Chat 창이 열려 있지 않다면 엽니다.
-1. 아래 프롬프트를 **GitHub Copilot Chat**에 복사해 붙여넣고, 프롬프트 입력 영역의 드롭다운에서 **Ask**나 **Edit** 대신 **Agent**를 선택합니다.  
-   <img src="https://github.com/user-attachments/assets/b9e291be-d835-4de0-ac1c-35a6ec3ea72d" width=30% height=30% />
+1. 아래 프롬프트를 **GitHub Copilot Chat**에 복사해 붙여넣고, 프롬프트 입력 영역에서 드롭다운하여 **Agent** 모드와 **GPT-5.3-Codex** 모델을 선택합니다.  
+   <img width="359" height="623" alt="image" src="https://github.com/user-attachments/assets/eab9b854-845e-49e5-843a-7223319ccfd0" />
 1. Copilot agent mode에게 **`build-octofit-app`**이라는 새 Git 브랜치를 생성하고 게시하도록 요청합니다.
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
    >
