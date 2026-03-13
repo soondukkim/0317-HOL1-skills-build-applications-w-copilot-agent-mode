@@ -25,7 +25,6 @@
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
 > 다음 단계를 **하나씩** 따라가며 명령을 실행해 주세요.
-> 지침을 따르세요
 >
 > ```prompt
 >
