@@ -1,89 +1,67 @@
-## Step 1: Hello GitHub Copilot agent mode
 
-Welcome to your **"Build applications with GitHub Copilot agent mode"** exercise! :robot:
+## Step1 : GitHub Copilot agent mode 시작하기
+**“GitHub Copilot agent mode로 애플리케이션 빌드하기”** 실습에 오신 것을 환영합니다! :robot:  
+이 실습에서는 GitHub Copilot agent mode를 사용해 **피트니스 목표와 진행 상황을 추적하는 애플리케이션**을 구축합니다. 🏋️‍♂️🏃‍♀️💪
 
-In this exercise, you will be using GitHub Copilot agent mode to build an application that tracks your fitness goals and progress. 🏋️‍♂️🏃‍♀️💪
+### GitHub Copilot agent mode란?
+Copilot agent mode는 앱을 처음부터 생성하고, 여러 파일에 걸친 리팩터링을 수행하며, 테스트를 작성·실행하고, 레거시 코드를 최신 프레임워크로 마이그레이션할 수 있습니다. 문서를 자동으로 생성하고, 새로운 라이브러리를 통합하며, 복잡한 코드베이스에 대한 질문에 답해 줄 수도 있습니다.  
+Copilot agent mode는 **워크스페이스를 이해하는 AI 협업자**로서 개발 생산성을 크게 높여 주며, 개발 흐름을 조율하되 **사용자가 항상 제어권을 유지**하도록 돕습니다.
 
-### What is GitHub Copilot agent mode?
+Copilot agent mode는 목표를 달성하기 위해 보다 **자율적이고 동적인 방식**으로 동작합니다. 요청을 처리할 때 필요에 따라 다음 단계를 여러 번 반복합니다.
 
-Copilot agent mode can create apps from scratch, refactor across multiple files, write and run tests, and migrate legacy code to modern frameworks. It can automatically generate documentation, integrate new libraries, or help answer questions about a complex codebase. Copilot agent mode helps you be super-productive by having an AI collaborator that understands the workspace. It can orchestrate your inner development flow while keeping you in control.
-
-Copilot agent mode operates in a more autonomous and dynamic manner to achieve the desired outcome. To process a request, Copilot loops over the following steps and iterates multiple times as needed:
-
-Determines the relevant context and files to edit autonomously.
-Offers both code changes and terminal commands to complete the task. For example, Copilot might compile code, install packages, run tests, and more.
-Monitors the correctness of code edits and terminal command output and iterates to remediate issues.
+- 관련 컨텍스트와 수정할 파일을 자율적으로 판단합니다.
+- 작업을 완료하기 위해 코드 변경과 터미널 명령을 함께 제안합니다.  
+  (예: 코드 컴파일, 패키지 설치, 테스트 실행 등)
+- 코드 수정 결과와 터미널 출력의 정확성을 모니터링하고, 문제가 있으면 반복적으로 수정합니다.
 
 > [!NOTE]
-> You can learn more about GitHub Copilot agent mode in the [Use agent mode documentation](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode).
+> GitHub Copilot agent mode에 대해 더 알아보려면  
+> [Use agent mode documentation](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)을 참고하세요.
 
-### :keyboard: Activity: Getting to know your GitHub Copilot agent mode development environment
-
-1. Right-click the below button to open the **Create Codespace** page in a new tab.
-
+### :keyboard: 활동: GitHub Copilot agent mode 개발 환경 살펴보기
+1. 아래 버튼을 **마우스 오른쪽 클릭**하여 새 탭에서 **Create Codespace** 페이지를 엽니다.  
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
-
-   - The free tier of Codespaces that comes with all GitHub accounts is fine, assuming you still have minutes available.
-   - The default Codespace settings are fine.
-
-1. Confirm the **Repository** field is your copy of the exercise, not the original, then click the green **Create Codespace** button.
-
-   - ✅ Your copy: `/{{full_repo_name}}`
-   - ❌ Original: `/skills/build-applications-w-copilot-agent-mode`
-
-1. Wait a moment for Visual Studio Code to load.
-
-1. Before we continue let's take a moment to familiarize ourselves with the project folder.
-
-   - The left navigation bar is where you can access the file explorer, debugger, and search.
-   - The lower panel (Ctrl+J) shows the debugger output, allows running terminal commands, and allows configuring the web service ports.
-   - Our docs folder contains the another sample application repository that will give Copilot agent mode context to build your application. More on that in the next steps!
-
-1. At the top of VS Code, locate and click the Copilot icon to open a Copilot Chat panel.
-
+   - 모든 GitHub 계정에 포함된 Codespaces **무료 티어**를 사용해도 괜찮습니다(남은 분이 있다면).
+   - 기본 Codespace 설정을 그대로 사용해도 됩니다.
+1. **Repository** 필드가 원본이 아닌 **본인의 실습용 복사본**인지 확인한 다음, 초록색 **Create Codespace** 버튼을 클릭합니다.
+   - ✅ 내 복사본: `/{{full_repo_name}}`
+   - ❌ 원본: `/skills/build-applications-w-copilot-agent-mode`
+1. Visual Studio Code가 로드될 때까지 잠시 기다립니다.
+1. 계속 진행하기 전에 프로젝트 폴더 구조를 잠깐 살펴봅시다.
+   - 왼쪽 내비게이션 바에서는 파일 탐색기, 디버거, 검색을 사용할 수 있습니다.
+   - 하단 패널(Ctrl+J)에서는 디버거 출력 확인, 터미널 명령 실행, 웹 서비스 포트 설정을 할 수 있습니다.
+   - `docs` 폴더에는 **Copilot agent mode가 앱을 생성하는 데 참고할 또 다른 샘플 애플리케이션 저장소**가 들어 있습니다. 이에 대해서는 다음 단계에서 자세히 다룹니다!
+1. VS Code 상단에서 **Copilot 아이콘**을 찾아 클릭하여 Copilot Chat 패널을 엽니다.  
    <img width="150" alt="image" src="https://github.com/user-attachments/assets/5e64db46-95cb-415d-badc-b6b8677f10c1" />
+1. GitHub Copilot을 처음 사용하는 경우, 사용 약관에 동의해야 계속 진행할 수 있습니다.
+   - **Accept** 버튼을 클릭해 계속하세요.
 
-1. If this is your first time using GitHub Copilot, you will have to accept the usage terms to continue.
-    - Click the **Accept** button to continue.
-
-### :keyboard: Activity: Use Copilot agent mode to create a branch and publish it. 🙋
-
-Great work! Let's ask copilot for help starting a branch so we can do some customizing.
+### :keyboard: 활동: Copilot agent mode로 브랜치 생성 및 게시하기 🙋
+아주 잘했습니다! 이제 커스터마이징을 시작할 수 있도록 **브랜치 생성**을 Copilot에게 도와달라고 요청해 봅시다.
 
 > [!NOTE]
-> - Keep in mind that the Copilot agent mode is conversational so it may ask you questions and you can ask it questions too.
-> - Wait a moment for the Copilot to respond and press the **Continue** button to execute commands presented by Copilot agent mode.
+> - Copilot agent mode는 대화형이므로 질문을 할 수도 있고, Copilot이 질문을 할 수도 있습니다.
+> - Copilot agent mode가 응답할 때까지 잠시 기다린 뒤, 제시된 명령을 실행하려면 **Continue** 버튼을 누르세요.
 
-1. If not already there, return to VS Code.
-1. Open the GitHub Copilot Chat window if not already open.
-1. Copy and paste the following prompt in the GitHub Copilot Chat and select the **Agent** instead of **Ask** or **Edit** from the drop down where you are inserting the prompt.
-
-   <img src="https://github.com/user-attachments/assets/b9e291be-d835-4de0-ac1c-35a6ec3ea72d" width=30% height=30%>
-
-1. Let's ask Copilot agent mode to help us remember the command and create the branch `build-octofit-app` and publishing it
-
+1. 아직 VS Code에 있지 않다면 VS Code로 돌아옵니다.
+1. GitHub Copilot Chat 창이 열려 있지 않다면 엽니다.
+1. 아래 프롬프트를 **GitHub Copilot Chat**에 복사해 붙여넣고, 프롬프트 입력 영역의 드롭다운에서 **Ask**나 **Edit** 대신 **Agent**를 선택합니다.  
+   <img src="https://github.com/user-attachments/assets/b9e291be-d835-4de0-ac1c-35a6ec3ea72d" width=30% height=30% />
+1. Copilot agent mode에게 **`build-octofit-app`**이라는 새 Git 브랜치를 생성하고 게시하도록 요청합니다.
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
    >
    > ```prompt
    > Please create and publish a new Git branch called build-octofit-app
    > ```
-
-   Copilot agent mode will respond and prompt you to **continue** to execute the command.<br/>
-
-   <img src=https://github.com/user-attachments/assets/d1652fc1-78e5-49c6-9303-b455815eea8f width=40% height=40%>
-
-1. Now that we are happy with the command, press the `Continue` button to let Copilot agent mode run it for us. No need to copy and paste!
-
-1. After a moment, look in the VS Code lower status bar, on the left, to see the active branch. It should now say `build-octofit-app`. If so, you are all done with this step!
-
-1. Now that your branch is pushed to GitHub, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
+   Copilot agent mode가 응답하고, 명령 실행을 위해 **continue**를 요청할 것입니다.<br/>
+   <img src=https://github.com/user-attachments/assets/d1652fc1-78e5-49c6-9303-b455815eea8f width=40% height=40% />
+1. 명령이 마음에 들면 `Continue` 버튼을 눌러 Copilot agent mode가 대신 실행하도록 합니다. 복사·붙여넣기는 필요 없습니다!
+1. 잠시 후 VS Code 하단 상태 표시줄의 왼쪽에서 활성 브랜치를 확인합니다. **`build-octofit-app`**으로 표시되면 이 단계는 완료입니다!
+1. 브랜치가 GitHub에 푸시되면, Mona가 이미 작업을 확인하고 있을 것입니다. 잠시 기다리며 댓글을 확인하세요. 진행 상황과 다음 레슨에 대한 안내가 도착할 것입니다.
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
-
-If you don't get feedback, here are some things to check:
-
-- Make sure your created the branch with the exact name `build-octofit-app`. No prefixes or suffixes.
-- Make sure the branch was indeed published to your repository.
-
+<summary>문제가 있나요? 🤷</summary><br/>
+피드백이 오지 않는다면 다음을 확인해 보세요.
+- 브랜치 이름이 정확히 `build-octofit-app`인지 확인하세요. (접두사/접미사 없음)
+- 해당 브랜치가 실제로 **본인 저장소에 게시**되었는지 확인하세요.
 </details>
