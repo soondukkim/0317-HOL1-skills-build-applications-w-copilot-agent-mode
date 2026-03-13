@@ -25,13 +25,16 @@
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
 > 다음 단계를 **하나씩** 따라가며 명령을 실행해 주세요.
->
-> ```prompt
 > 지침을 따르세요
 >
+> ```prompt
+>
 > - OctoFit Tracker 앱 구조를 따릅니다
+> 
 > - Python 가상 환경 생성을 따릅니다
+> 
 > - requirements.txt 파일을 생성합니다
+> 
 > - 생성된 파일에서 Python 요구사항을 설치합니다
 > ```
 
