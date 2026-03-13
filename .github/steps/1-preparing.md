@@ -51,12 +51,13 @@ Copilot agent mode는 목표를 달성하기 위해 보다 **자율적이고 동
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
    >
    > ```prompt
-   > Please create and publish a new Git branch called build-octofit-app
+   > build-octofit-app 이라는 이름의 새 Git 브랜치를 생성하고 게시해 주세요.
    > ```
    Copilot agent mode가 응답하고, 명령 실행을 위해 **continue**를 요청할 것입니다.<br/>
    <img src=https://github.com/user-attachments/assets/d1652fc1-78e5-49c6-9303-b455815eea8f width=40% height=40% />
 1. 명령이 마음에 들면 `Continue` 버튼을 눌러 Copilot agent mode가 대신 실행하도록 합니다. 복사·붙여넣기는 필요 없습니다!
 1. 잠시 후 VS Code 하단 상태 표시줄의 왼쪽에서 활성 브랜치를 확인합니다. **`build-octofit-app`**으로 표시되면 이 단계는 완료입니다!
+   <img width="516" height="127" alt="image" src="https://github.com/user-attachments/assets/915d7b60-057d-4a1a-bba8-8a558417b862" />
 1. 브랜치가 GitHub에 푸시되면, Mona가 이미 작업을 확인하고 있을 것입니다. 잠시 기다리며 댓글을 확인하세요. 진행 상황과 다음 레슨에 대한 안내가 도착할 것입니다.
 
 <details>
