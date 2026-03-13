@@ -1,34 +1,31 @@
 ---
 applyTo: "**"
 ---
-# Octofit-tracker Fitness App Setup and Structure Guidelines
 
-## Explain the Octofit Tracker App goals and steps
+# Octofit-tracker 피트니스 앱 설정 및 구조 가이드라인
 
-I want to build an Octofit Tracker app that will include the following:
+## Octofit Tracker 앱의 목표와 단계 설명
+다음 기능을 포함하는 Octofit Tracker 앱을 구축하고자 합니다.
 
-* User authentication and profiles
-* Activity logging and tracking
-* Team creation and management
-* Competitive leader board
-* Personalized workout suggestions
+* 사용자 인증 및 프로필
+* 활동 기록 및 추적
+* 팀 생성 및 관리
+* 경쟁형 리더보드
+* 개인 맞춤형 운동 제안
 
-## Never change directories when agent mode is running commands
+## Agent mode에서 명령을 실행할 때 디렉터리를 변경하지 말 것
+- 디렉터리를 절대 변경하지 않습니다
+- 대신 명령을 실행할 때 대상 디렉터리를 명시합니다
 
-- Never change directories
-- Instead point to the directory when issuing commands
-
-## Forwarded ports
-
+## 포트 포워딩
 - 8000: public
 - 3000: public
 - 27017: private
 
-Do not propose any other ports to forward or to make public
+위에 명시된 포트 외에 **다른 포트를 포워딩하거나 public으로 제안하지 마십시오**
 
-## OctoFit Tracker App structure
-
-The section defines the OctoFit Tracker App's structure
+## OctoFit Tracker 앱 구조
+이 섹션에서는 OctoFit Tracker 앱의 구조를 정의합니다.
 
 ```text
 octofit-tracker/
@@ -38,20 +35,20 @@ octofit-tracker/
 └── frontend/
 ```
 
-## Create the OctoFit Tracker Python virtual environment 
+## OctoFit Tracker Python 가상 환경 생성
 
-- To create the virtual environment, run the following command:
+- 가상 환경을 생성하려면 다음 명령을 실행합니다:
   
   ```bash
   python3 -m venv octofit-tracker/backend/venv
   ```
 
-## OctoFit Tracker Python required packages
+## OctoFit Tracker Python 필수 패키지
 
-### Create file octofit-tracker/backend/requirements.txt
+### octofit-tracker/backend/requirements.txt 파일 생성
 
-- add the following to octofit-tracker/backend/requirements.txt
-- Install the Python packages below only for our OctoFit Tracker project
+- octofit-tracker/backend/requirements.txt 파일에 다음 내용을 추가합니다
+- 아래의 Python 패키지는 OctoFit Tracker project 전용으로만 설치합니다
 
 ```text
 Django==4.1.7
@@ -81,19 +78,20 @@ webencodings==0.5.1
 websocket-client==1.8.0
 ```
 
-## Python virtual environment requirements
+## Python 가상 환경 요구사항
 
-Create a requirements.txt with the following Python required packages:
-Install the requirements that we created in requirements.txt.
+다음 Python 필수 패키지를 포함하는 requirements.txt 를 생성합니다.
+생성한 requirements.txt 에 정의된 패키지를 설치합니다.
 
 ```bash
 source octofit-tracker/backend/venv/bin/activate 
 pip install -r octofit-tracker/backend/requirements.txt
 ```
 
-## mongodb-org service and data creation
+## mongodb-org 서비스 및 데이터 생성
 
-- always use `ps aux | grep mongod` for checking for mongod running
-- mongodb-org is the official MongoDB package
-- mongosh is the official client tool
-- Always use Django's ORM, not direct MongoDB scripts to create the database structure and data
+- mongod 실행 여부를 확인할 때는 항상 다음 명령을 사용합니다.
+    `ps aux | grep mongod`
+- mongodb-org 는 공식 MongoDB 패키지 입니다.
+- mongosh 는 공식 클라이언트 구조 입니다.
+- 데이터베이스 구조 및 데이터 생성 시 직접 MongoDB 스크립트를 사용하지 말고, 항상 Django's ORM 을 사용해야 합니다.
