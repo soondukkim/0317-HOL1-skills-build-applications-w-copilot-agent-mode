@@ -21,7 +21,7 @@ Copilot agent mode는 목표를 달성하기 위해 보다 **자율적이고 동
 ### :keyboard: 활동: GitHub Copilot agent mode 개발 환경 살펴보기
 1. 아래 버튼을 **마우스 오른쪽 클릭**하여 새 탭에서 **Create Codespace** 페이지를 엽니다.  
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
-   - 모든 GitHub 계정에 포함된 Codespaces **무료 티어**를 사용해도 괜찮습니다(남은 분이 있다면).
+   - 모든 GitHub 계정에 포함된 Codespaces 는 **남은 시간**이 있다면 **Free Tier**를 사용해도 괜찮습니다.
    - 기본 Codespace 설정을 그대로 사용해도 됩니다.
 1. **Repository** 필드가 원본이 아닌 **본인의 실습용 복사본**인지 확인한 다음, 초록색 **Create Codespace** 버튼을 클릭합니다.
    - ✅ 내 복사본: `/{{full_repo_name}}`
