@@ -102,8 +102,6 @@
 > ```
 > <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/3ed82b45-7528-41b7-840c-bbd9a076c327" />
 > <br>
-> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/9f0938c5-1bc7-43ea-813a-496bdd6cb9fd" />
-> <br>
 
 ### :keyboard: 활동: React 앱 실행 및 출력 확인
 
@@ -170,8 +168,8 @@
 
 1. 이제 모든 애플리케이션 컴포넌트에 대한 React 프론트엔드를 생성했으므로,  
    변경 사항을 `build-octofit-app` 브랜치에 반영합니다.
-1. 새 변경 사항이 완료되었으므로 **커밋(commit)** 하고 **푸시(push)** 하여  
-   `build-octofit-app` 브랜치에 반영하세요.
+1. 새 변경 사항이 완료되었으므로, **소스제어**에서 **커밋 및 푸시** 메뉴를 선택하여 `build-octofit-app` 브랜치에 반영하세요.  (소스 제어의 변경 내용 창에서 **커밋 메시지 생성** 을 클릭하면 변경된 내용에 대한 커밋 메시지가 자동 생성 됩니다.)              <br>
+   <img width="469" height="329" alt="image" src="https://github.com/user-attachments/assets/940be8c5-5620-40e7-858b-1946ae1c2729" />   <br>
 1. Mona가 작업을 확인하고 피드백을 제공하며 다음 레슨을 공유할 때까지 잠시 기다려 계속 진행하세요!
 
 <details>
