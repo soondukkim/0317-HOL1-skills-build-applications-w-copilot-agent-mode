@@ -28,11 +28,17 @@
 >
 > ```prompt
 > - OctoFit Tracker 앱 구조를 따릅니다
+> ```
 > 
+> ```prompt
 > - Python 가상 환경 생성을 따릅니다
+> ```
 > 
+> ```prompt
 > - requirements.txt 파일을 생성합니다
+> ```
 > 
+> ```prompt
 > - 생성된 파일에서 Python 요구사항을 설치합니다
 > ```
 
