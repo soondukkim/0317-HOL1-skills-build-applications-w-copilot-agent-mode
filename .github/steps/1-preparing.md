@@ -45,7 +45,7 @@ Copilot agent mode는 목표를 달성하기 위해 보다 **자율적이고 동
 
 1. 아직 VS Code에 있지 않다면 VS Code로 돌아옵니다.
 1. GitHub Copilot Chat 창이 열려 있지 않다면 엽니다.
-1. 아래 프롬프트를 **GitHub Copilot Chat**에 복사해 붙여넣고, 프롬프트 입력 영역에서 드롭다운하여 **Agent** 모드와 **GPT-5.3-Codex** 모델을 선택합니다.  
+1. 프롬프트 입력 영역에서 드롭다운하여 **Agent** 모드와 **GPT-5.3-Codex** 모델을 선택하고, 아래 프롬프트를 **GitHub Copilot Chat**에 복사해 붙여넣습니다.  
    <img width="359" height="623" alt="image" src="https://github.com/user-attachments/assets/eab9b854-845e-49e5-843a-7223319ccfd0" />
 1. Copilot agent mode에게 **`build-octofit-app`**이라는 새 Git 브랜치를 생성하고 게시하도록 요청합니다.
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
