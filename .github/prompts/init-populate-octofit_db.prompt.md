@@ -1,7 +1,7 @@
 ---
 mode: 'agent'
 model: GPT-5.2
-description: 'Setup, configure, and populate the octofit_db database with test data for the Octofit Tracker Django app.'
+description: 'Octofit Tracker Django 앱을 위한 octofit_db 데이터베이스를 설정, 구성하고 테스트 데이터로 채웁니다'
 ---
 
 # 환경 설정
