@@ -1,7 +1,7 @@
 ---
-mode: 'agent'
-model: GPT-5.2
-description: 'Create a Django project, start it, and run it'
+모드: 'agent'
+모델: GPT-5.2
+설명: 'Create a Django project, start it, and run it'
 ---
 
 당신의 작업은 이미 모든 사전 요구 사항이 포함되어 있는 `octofit-tracker/backend/venv` 디렉터리의 Python 가상 환경을 사용하여 `octofit-tracker/backend/octofit_tracker` 디렉터리에 Django 프로젝트를 생성하는 것입니다.
