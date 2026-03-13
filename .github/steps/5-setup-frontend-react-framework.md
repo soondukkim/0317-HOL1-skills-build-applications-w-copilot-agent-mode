@@ -129,17 +129,23 @@
 > ```prompt
 > App.css 스타일을 적용해 보기 좋게 만들어 봅시다.
 >
-> - App.js와 모든 컴포넌트 JavaScript 파일을 다음 기준에 맞게 통일합니다.
-> - 모든 JavaScript 컴포넌트의 데이터 표시에는 bootstrap 테이블을 사용합니다.
-> - 버튼에는 bootstrap 버튼을 사용합니다.
-> - 제목에는 bootstrap heading을 사용합니다.
-> - 링크에는 bootstrap 링크를 사용합니다.
-> - 네비게이션 메뉴에는 bootstrap navigation을 사용합니다.
-> - 폼에는 bootstrap form을 사용합니다.
-> - 카드에는 bootstrap card를 사용합니다.
-> - 모달에는 bootstrap modal을 사용합니다.
-> - 모든 컴포넌트 데이터에 대해 일관된 테이블 레이아웃을 적용합니다.
+> - App.js와 앱 내 모든 컴포넌트의 javascript 파일들이 다음 사항들을 준수하도록 일관성을 유지해야 합니다.
+>   - 모든 JavaScript 컴포넌트의 데이터 표시에는 bootstrap 테이블을 사용합니다.
+>   - 버튼에는 bootstrap 버튼을 사용합니다.
+>   - 제목에는 bootstrap heading을 사용합니다.
+>   - 링크에는 bootstrap 링크를 사용합니다.
+>   - 네비게이션 메뉴에는 bootstrap navigation을 사용합니다.
+>   - 폼에는 bootstrap form을 사용합니다.
+>   - 카드에는 bootstrap card를 사용합니다.
+>   - 모달에는 bootstrap modal을 사용합니다.
+>   - 모든 컴포넌트 데이터에 대해 일관된 테이블 레이아웃을 적용합니다.
 > ```
+> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/aeb53a8d-350c-4f67-9198-63c2562dba4b" />
+> <br>
+> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/dd61c40f-b6b7-4390-a506-b5db03ccbbcb" />
+> <br>
+> <img width="1550" height="240" alt="image" src="https://github.com/user-attachments/assets/ece0227a-6dc4-48da-b409-e3fff85f9eb1" />
+> <br>
 
 ### :keyboard: 선택 활동: octofit tracker 앱을 더 보기 좋게 만들고 색상 추가하기
 
@@ -149,16 +155,19 @@
 > App.css를 수정하여 더 보기 좋게 스타일링해 봅시다.
 >
 > - App.css 파일을 수정하여 다음을 수행합니다.
-> - 배경에 색상을 추가합니다.
-> - 텍스트에 색상을 추가합니다.
-> - 테이블에 색상을 추가합니다.
-> - 버튼에 색상을 추가합니다.
-> - 제목에 색상을 추가합니다.
-> - 링크에 색상을 추가합니다.
-> - 네비게이션 메뉴에 색상을 추가합니다.
-> - 앱 왼쪽에 정렬된 octofitapp-small 로고를 추가하여 보기 좋게 만듭니다.
-> - 앱에 favicon을 추가하여 보기 좋게 만듭니다.
+>   - 배경에 색상을 추가합니다.
+>   - 텍스트에 색상을 추가합니다.
+>   - 테이블에 색상을 추가합니다.
+>   - 버튼에 색상을 추가합니다.
+>   - 제목에 색상을 추가합니다.
+>   - 링크에 색상을 추가합니다.
+>   - 네비게이션 메뉴에 색상을 추가합니다.
+>   - 앱 왼쪽에 정렬된 octofitapp-small 로고를 추가하여 보기 좋게 만듭니다.
+>   - 앱에 favicon을 추가하여 보기 좋게 만듭니다.
 > ```
+> <img width="1558" height="504" alt="image" src="https://github.com/user-attachments/assets/258ce76d-e087-410e-9461-744c1366c61a" />
+> <br>
+
 
 ### :keyboard: 선택 활동: 외형을 반복적으로 개선하고 다양한 모델 시도하기
 
