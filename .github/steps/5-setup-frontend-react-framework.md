@@ -55,7 +55,7 @@
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
-> 변경 내용 점검을 위해서 아래 프롬프트를 **단계별로** 실행해 주세요.
+> 변경 내용 점검을 위해서 프롬프트들을 **단계별로** 실행해 주세요.
 >
 > ```prompt
 > Octofit-tracker frontend React 컴포넌트를 업데이트합시다.
