@@ -51,19 +51,19 @@
 이제 실제로 Django 애플리케이션을 실행해 봅시다!  
 왼쪽 사이드바에서 **`Run and Debug`** 탭을 선택한 다음, **Start Debugging** 아이콘을 클릭하세요.
 
-https://github.com/user-attachments/assets/a6c32898-bbeb-41ed-a8c5-488c8a42d507
+<img alt="Run Django" src="https://github.com/user-attachments/assets/a6c32898-bbeb-41ed-a8c5-488c8a42d507" width=30% height=30%>
 
 포트 8000에 대해 표시되는 실행 중인 Django REST API URL로 이동합니다. 예시는 다음과 같습니다.
 
-https://github.com/user-attachments/assets/627f3cbe-96ae-4a30-b38b-acd3cecf96ee
+<img alt="django-rest-api-port" src="https://github.com/user-attachments/assets/627f3cbe-96ae-4a30-b38b-acd3cecf96ee" width=30% height=30%>
 
 웹 브라우저에서 열면 다음과 같은 경고 화면이 나타납니다.
 
-https://github.com/user-attachments/assets/cb52d137-e78d-440b-8e9c-c322d7c49b48
+<img alt="django-rest-api" src="https://github.com/user-attachments/assets/cb52d137-e78d-440b-8e9c-c322d7c49b48" width=30% height=30%>
 
 `Continue`를 클릭하면, 다음과 같이 **codespace 이름이 포함된 화면**이 표시될 것입니다.
 
-https://github.com/user-attachments/assets/45ac98ba-aa7b-4953-81d6-e38bba97ae35
+<img alt="django-rest-api" src="https://github.com/user-attachments/assets/45ac98ba-aa7b-4953-81d6-e38bba97ae35" width=50% height=50%>
 
 1. 이제 URL 엔드포인트에 codespace 이름을 포함하도록 Django 프로젝트를 업데이트했으므로,  
    변경 사항을 `build-octofit-app` 브랜치에 반영합니다.
