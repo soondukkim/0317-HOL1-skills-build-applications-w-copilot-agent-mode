@@ -1,5 +1,5 @@
 
-## 3단계: octofit_db MongoDB 데이터베이스 초기화 및 생성, Django 프로젝트/앱 생성, Django 프로젝트/앱 파일 업데이트, MongoDB 데이터베이스 채우기
+## 3단계: octofit_db MongoDB 데이터베이스 초기화 및 생성, Django 프로젝트/앱 생성, Django 프로젝트/앱 파일 업데이트, MongoDB 데이터베이스 적재
 
 > [!NOTE]
 > **백그라운드 설명:** 이 실습에서는 GitHub Copilot의 응답을 안내하는 **커스텀 지침 파일**을 사용합니다.  
