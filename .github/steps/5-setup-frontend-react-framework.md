@@ -92,13 +92,13 @@
 > <br>
 
 > ```prompt 
-> - 모든 컴포넌트에 가져온 데이터를 로그에 출력하도록 업데이트하고, 페이지네이션된 결과(.results)와 일반 배열 응답 모두에 호환되도록 수정하세요.
+> 모든 컴포넌트에 가져온 데이터를 로그에 출력하도록 업데이트하고, 페이지네이션된 결과(.results)와 일반 배열 응답 모두에 호환되도록 수정하세요.
 > ```
 > <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/cc4970c7-db71-4411-8e01-26ad5321c44e" />
 > <br>
 
 > ```prompt  
-> - 각 컴포넌트에 console.log 문을 추가하여 가져온 데이터와 REST API 엔드포인트를 로그로 출력합니다.
+> 각 컴포넌트에 console.log 문을 추가하여 가져온 데이터와 REST API 엔드포인트를 로그로 출력합니다.
 > ```
 > <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/3ed82b45-7528-41b7-840c-bbd9a076c327" />
 > <br>
@@ -141,8 +141,6 @@
 >   - 모든 컴포넌트 데이터에 대해 일관된 테이블 레이아웃을 적용합니다.
 > ```
 > <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/aeb53a8d-350c-4f67-9198-63c2562dba4b" />
-> <br>
-> <img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/dd61c40f-b6b7-4390-a506-b5db03ccbbcb" />      <br>
 > <br>
 > <img width="1550" height="240" alt="image" src="https://github.com/user-attachments/assets/ece0227a-6dc4-48da-b409-e3fff85f9eb1" />
 > <br>
