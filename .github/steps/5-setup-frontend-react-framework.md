@@ -118,7 +118,7 @@
 
 <img alt="django-rest-api" src="https://github.com/user-attachments/assets/cb52d137-e78d-440b-8e9c-c322d7c49b48" width=30% height=30%>
 
-`Continue`를 클릭하면 다음과 같이 표시될 것입니다.
+`Continue`를 클릭하면 다음과 같이 표시될 것입니다. <br>
 
 <img alt="react-frontend-app" src="https://github.com/user-attachments/assets/f7f1a076-c259-49f6-8aa5-9ebcd5f0698d" width=50% height=50%>
 
