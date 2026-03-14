@@ -25,6 +25,7 @@ Copilot agent mode는 목표를 달성하기 위해 보다 **자율적이고 동
    - 기본 Codespace 설정을 그대로 사용해도 됩니다.
 1. **Repository** 필드가 원본이 아닌 **본인의 실습용 복사본**인지 확인한 다음, 초록색 **Create Codespace** 버튼을 클릭합니다.
    - ✅ 내 복사본: `/{{full_repo_name}}`
+   - ❌ 원본: `/0317-HOL1-skills-build-applications-w-copilot-agent-mode`
    - ❌ 원본: `/skills/build-applications-w-copilot-agent-mode`
 1. Visual Studio Code가 로드될 때까지 잠시 기다립니다.
 1. 계속 진행하기 전에 프로젝트 폴더 구조를 잠깐 살펴봅시다.
