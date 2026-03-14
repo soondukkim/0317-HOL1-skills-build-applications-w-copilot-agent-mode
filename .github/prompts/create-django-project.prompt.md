@@ -1,6 +1,6 @@
 ---
 모드: 'agent'
-모델: GPT-5.2
+모델: GPT-5.3-Codex
 설명: 'Create a Django project, start it, and run it'
 ---
 
