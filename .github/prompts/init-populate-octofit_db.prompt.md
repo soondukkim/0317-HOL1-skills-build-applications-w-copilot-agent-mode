@@ -1,7 +1,7 @@
 ---
 모드: 'agent'
 모델: GPT-5.3-Codex
-설명: 'Octofit Tracker Django 앱을 위한 octofit_db 데이터베이스를 설정, 구성하고 테스트 데이터로 채웁니다'
+설명: 'Octofit Tracker Django 앱을 위한 octofit_db 데이터베이스를 설정, 구성 및 테스트 데이터를 적재합니다'
 ---
 
 # 환경 설정
