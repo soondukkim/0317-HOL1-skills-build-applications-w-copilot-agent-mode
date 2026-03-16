@@ -20,7 +20,7 @@
 6. Python 가상 환경에서 `makemigrations`와 `migrate`를 실행합니다.
 7. `octofit_db` 데이터베이스를 초기화하고 users, teams, activities, leaderboard, workouts 에 대한 컬렉션을 생성합니다
 8. user 컬렉션의 `email` 필드에 대해 고유 인덱스를 보장합니다. (예: `db.users.createIndex({ "email": 1 }, { unique: true })`).
-9. `octofit-tracker/backend/octofit_tracker/management/commands/populate_db.py` 에 있는 Django 관리 명령을 사용해 모든 컬렉션에 대한 테스트 데이터를 적재합니다.
+9. `octofit-tracker/backend/octofit_tracker/management/commands/populate_db.py` 에 있는 Django 관리 명령을 사용해 모든 컬렉션에 대한 테스트 데이터를 적재합니다. <br>
    a. 도움말 메시지: 'octofit_db 데이터베이스에 테스트 데이터를 입력합니다.'  
    b. 데이터 삭제 및 삽입에는 Django ORM 을 사용합니다.  
    c. 샘플 데이터는 슈퍼히어로로 구성하고, 팀은 marvel 팀과 dc 팀을 사용합니다.
